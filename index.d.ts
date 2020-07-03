@@ -1,5 +1,5 @@
 declare module 'react-use-sync-scroll' {
-  import { RefObject } from 'react'
+  import { RefCallback } from 'react'
 
   export interface SyncScrollOptions {
     /**
@@ -13,7 +13,7 @@ declare module 'react-use-sync-scroll' {
     vertical?: boolean
   }
 
-  function useSyncScroll(refs: RefObject<any>, options: SyncScrollOptions): void
+  function useSyncScroll(options: SyncScrollOptions): RefCallback<HTMLElement>
 
   export default useSyncScroll
 }
